@@ -5,8 +5,53 @@
         <title>slider</title>        
         <link href="css/reset.css" rel="stylesheet" type="text/css" />
         <link href="css/style.css" rel="stylesheet" type="text/css" />
+        <script src="js/jquery.1.12.4.js" type="text/javascript"></script>
+        <script src="plugins/bxslider/js/jquery.bxslider.js" type="text/javascript"></script>
+        <script src="https://kit.fontawesome.com/83f24f1ed8.js" crossorigin="anonymous"></script>
+        <script>
+            $(document).ready(function(){
+              $('.slider').bxSlider({
+                controls:false,
+                pager:false,
+                auto:true
+              });
+            });
+        </script>
     </head>
     <body>
-        <div class="back01"></div>
+        <div class="overlay"></div>
+        <div class="slider">
+            <div class="background__01"></div>
+            <div class="background__02"></div>
+            <div class="background__03"></div>
+        </div>
+        <div class="contents">
+            <p class="contents_name">Park, So Yeong</p>
+            <p class="contents_jpb">I'm Web Designer & Web Programmer</p>
+            <div class="contents_sns">
+                <ul class="contents_list">
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fa-brands fa-blogger-b"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </body>
 </html>
